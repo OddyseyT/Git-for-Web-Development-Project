@@ -9,89 +9,121 @@ I wasn't quite able to get the pictures all done exactly as shown.  I did the be
     To create webpages the browsers can read
 
     3. What is an attribute and where do we put it? 
+    attributes modify code.  You put it after a start tag
 
     4. What is the h1 tag used for? How many times should I use it on a page?
     Its the largest heading in html.  Use sparingly
 
     5. Name two tags that have required attributes
-
+    img tags and a tags
 
     6. What do we put in the head of our HTML document? 
-
+    intormation about the page.
 
     7. What is an id? 
     Its a css tag that helps identify an element.
 
     8. What elements can I add an id to? 
-
+    it can be used on any html element
 
     9. How many times can I use the same id on a page? 
-
+    Once
 
     10. What is a class? 
-    
+    a bit of programming that can be reused in code
     
     11. What elements can I add a class to? 
-
+    Any html element can have a class
 
     12. How many times can I use the same class on a page? 
-
+    As many times as you want to
 
     13. How do I get my link to open in a new tab?
     You can specify that in html by: 
 
-
     14. What is the alt attribute used for? 
-    
+    Usually text that takes the place of an image or element
     
     15. How do I reference an id?
-    
+    With a hashtag
     
     16. What is the difference between a section and a div
     
+
     17. What is CSS used for? 
     Its to format a weppage.
     
     18. How to we select an element? Example - every h2 on the page
+    type in the element in css and then use curly brackets
 
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    A class can be reused, and id cannot.  A class could be used when you want to repeat certain kinds of formatting
 
     20. How do we select classes in CSS?
+    with a dot before the class name
     
     21. How do we select a p element with a single class of “human””?
+    .human + p {}
     
     22. What is a parent child selector? When would this be useful? 
+    Its a way of selecting code within code to format.
     
     23. How do you select all links within a div with the class of sidebar?
+    a.sidebar {}
     
     24. What is a pseudo selector?
+    Its used when you want to do something like change the text or picture when you hover over them or something like that.
     
     25. What do we use the change the spacing between lines?
+    line-height:
     
     26. What do we use to change the spacing between letters?
+    letter-spacing:
     
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    text-transform: uppercase, text-transform: lowercase, text-transform: capitalize
     
     28. How do I add a 1px border around my div that is dotted and black?
-    
+    div { 
+        border-style: dotted;
+        border-width: 1px;
+        border-color: black;
+    }
     29. How do I select everything on the page? 
     With an asterick in css
     
     30. How do I write a comment in CSS?
+    /* */
     
     31. How do I find out what file I am in, when I am using the command line? 
+    it lists the directory one is in on the command line
     
     32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls
     
     33. How do I remove a file via the command line? Why do I have to be careful with this?
+    git rm -r FileName
 
     34. Why should I use version control? 
+    In case of errors.
     
     35. How often should I commit to github?
+    as often as needed.
     
     36. What is the command we would use to push our repo up to github? 
+    git push -u origin firstname-lastname
     
-    37. Walk me through Lambda's git flow. 
+    37. Walk me through Lambda's git flow.
+    First you fork your own copy by using the fork button
+    Next you add the team leader as your collaborator by hitting the settings button on github
+    Then you clone the forked copy by hitting the clone button and copying the link.  It is typed into the command line like:  git clone <your-repo-address>
+    You change directories with cd <named directory>
+    Type in git checkout -b 'firstname-lastname'
+    edit and change your files as you like.  Preferrably with visual studio code for consistency
+    type git add .
+    type git commit -m "commit message"
+    type git push -u origin branch-name to push committed files back to github
+    Then you want to properly submit a pull request
 
 Stretch Questions
 
